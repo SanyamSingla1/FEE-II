@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Application Form
+        </title>
+    </head>
+    <body>
+        <form><center>
+        <h1>Application Form</h1><hr></center>
+        <input type="checkbox" id="email" checked>
+        <label for="email">E-mail</label><br><br>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" placeholder="Enter your first name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" placeholder="Enter your last name" required>
+        <br><br>
+        <label for="name">Father's Name</label>
+        <input type="text" id="name" placeholder="Enter your father's name" required>
+        <br><br>
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" required>
+        <br>
+        <br>
+        <label for="contactno">Contact No.</label>
+        <select><option value="+91">+91</option>
+            <option value="+92">+92</option>
+            <option value="+93">+93</option></select>
+        <input type="number" id="contactno" placeholder="Enter your contact no." min="1000000000" max="9999999999" required>
+        <br>
+        <br>
+        Gender<br>
+        <input type="radio" name="gender" id="male"><label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+        <label for="Address">Permanent Address</label>
+        <textarea id="Address">Enter Your Permanent Address</textarea>
+        <br><br>
+        <label for="address">Correspondance Address</label>
+        <textarea id="address">Enter Your Correspondance Address</textarea>
+        <br><br>
+        Skills<br>
+        <input type="checkbox" id="Skills"><label for="Skills">HTML</label><br>
+        <input type="checkbox" id="Skills"><label for="Skills">CSS</label><br>
+        <input type="checkbox" id="Skills"><label for="Skills">JavaScript</label><br>
+        <br>
+        Nationality<br>
+        <input type="radio" name="nation" id="india"><label for="india">India</label><br>
+        <input type="radio" name="nation" id="usa"><label for="usa">USA</label><br>
+        <input type="radio" name="nation" id="uk"><label for="uk">UK</label><br>
+        <br>
+        <label for="file">Resume upload:</label>
+        <input type="file" id="file" required><br><br><hr>
+        <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset">Reset</button>
+    </form>
+    </body>
+    </html>
