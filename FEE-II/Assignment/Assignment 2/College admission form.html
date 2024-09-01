@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            College Admission Form
+        </title>
+        <style>
+            body{
+                background-image:url("Chitkara_University_pic.jpg");
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:100%;
+                backdrop-filter:blur(3px);
+                
+            }
+            h1{
+                color:black;
+                font-size:50px;
+                font-family:consolas;
+            }
+            form{ background-color:black,1;
+                color:white;
+                margin-left:400px;
+                margin-right:400px;
+                font-weight:bold;
+                font-family:calibri;
+                font-size:20px;
+            }
+            div{
+                padding:0px 40px;
+            }
+            button{
+                background-color:black,1;
+                color:black;
+                font-size:30px;
+                font-family:consolas;
+            }
+            </style>
+    </head>
+    <body>
+        <form><center>
+            <img src="Cu.png" alt="Chitkara University">
+        </center>
+            <div>
+            <input type="checkbox" id="email" checked>
+            <label for="email">E-mail</label><br><br>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="Enter your first name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Enter your last name" required>
+            <br><br>
+            <label for="name">Father's Name</label>
+            <input type="text" id="name" placeholder="Enter your father's name" required>
+            <br><br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" required>
+            <br>
+            <br>
+            <label for="contactno">Contact No.</label>
+            <select><option value="+91">+91</option>
+                <option value="+92">+92</option>
+                <option value="+93">+93</option></select>
+            <input type="number" id="contactno" placeholder="Enter your contact no." min="1000000000" max="9999999999" required>
+            <br>
+            <br>
+            Gender<br>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+            <label for="Address">Permanent Address</label>
+            <textarea id="Address">Enter Your Permanent Address</textarea>
+            <br><br>
+            <label for="address">Correspondance Address</label>
+            <textarea id="address">Enter Your Correspondance Address</textarea>
+            <br><br>
+            <label for="course">Course</label>
+            <select>
+            <option value="B.E.">Bachelor of Engineering</option>
+            <option value="B.D.S.">Bachelor of Dental Surgery</option>
+            <option value="B.Sc.">Bachelor of Science</option>
+            <option value="B.A.">Bachelor of Arts</option>
+            <option value="B.Com.">Bachelor of Commerce</option></select>
+            <br><br>
+            Nationality
+            <select>
+                <option value="ind">India</option>
+                <option value="usa">U.S.A.</option>
+                <option value="uk">UK</option>
+                <option value="can">Canada</option>
+                <option value="pak">Pakistan</option></select>
+            <br><br>
+            <label for="10">10<sup>th</sup> Certificate</label>
+            <input type="file" id="10" required><br><br>
+            <label for="ip">Identity Proof</label>
+            <input type="file" id="ip" required><br><br>
+            <label for="cc">Caste Certificate, if have</label>
+            <input type="file" id="cc" required><br><br>
+            <label for="ps">Upload Passport Size photograph</label>
+            <input type="file" id="ps" required><br><br>
+            <label for="sign">Upload Signature</label>
+            <input type="file" id="sign" required><br><br>
+        </div><center>
+            <h1><button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">Reset</button></h1>
+        </center>
+        </form>
+    </body>
+    </html>
